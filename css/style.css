@@ -30,6 +30,31 @@
   --black-color: #000000;
   --dark-color: #222222;
 }
+  
+  .section-padding{
+  padding:60px 0;
+  }
+  .brand-carousel {
+  background: aliceblue;
+  margin-top: 15%;
+  }
+  .owl-dots {
+  text-align: center;
+  margin-top: 4%;
+  }
+  .owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+  }
+  .owl-dot.active {
+  background-color: #000 !important;
+  }
+  
 
 .theme-color {
   color: var(--second-color);
@@ -848,7 +873,6 @@ textarea.form-control:focus {
 
 .top_feature {
   text-align: center;
-  padding: 90px 0;
 }
 
 .top_feature .logo_image_holder {
@@ -9106,7 +9130,7 @@ video {
 }
 
 .dark-theme .theme_slider_1 .slider {
-  background-image: url("../images/slider/interior.png");
+  background-image: url("../images/slider/interior1.png");
 }
 
 .dark-theme .theme_slider_1 .slider::before {
