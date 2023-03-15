@@ -10071,7 +10071,7 @@ video {
 
 .page_header::before {
   position: absolute;
-  content: url("../images/about/s1.png");
+  content: url("");
   z-index: 99;
   left: 0;
   top: 48px;
@@ -10081,7 +10081,7 @@ video {
 .page_header::after {
   position: absolute;
   content: "";
-  background: url("../images/about/s2.png");
+  background: url("");
   z-index: 99;
   right: 0;
   bottom: 0;
