@@ -230,7 +230,7 @@ img {
 .section {
   position: relative;
   padding-top: 110px;
-  padding-bottom: 110px;
+    padding-bottom: 0px;
 }
 
 .section_sm {
@@ -2051,7 +2051,7 @@ textarea.form-control:focus {
 
 /*------- Testimonial -------*/
 .testimonial {
-  padding-top: 185px;
+  padding-top: 80px;
   background: #F2F7F7;
 }
 
@@ -11234,6 +11234,7 @@ video {
   }
   .service_inner .main_img img {
     width: 60%;
+  
   }
   .contact_us_1 {
     padding: 30px;
