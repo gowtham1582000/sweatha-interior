@@ -4070,7 +4070,8 @@ video {
 
 .logo a img {
   width: 100%;
-  max-width: 153px;
+  height: 50%;
+ 
 }
 
 /*---------- Funfacts ------------*/

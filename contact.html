@@ -25,6 +25,15 @@
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous">
 	</script>
+		</script>
+		<script type="text/javascript"
+	 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+ </script>
+ <script>
+  (function () {
+ 
+		 emailjs.init("7t35NAQ56Ri3jfcIR");
+	 })();</script>
 	<script> 
 	$(function(){
 	  $("#header").load("header.html"); 
@@ -103,42 +112,41 @@
 									<h1 class="section_title">Want to Ask anything?<br>
 										Send Us a Mail Anytime</h1>
 								</div>
-								<form class="contact_form" action="contact.php" method="post" data-aos="fade-left" data-aos-duration="1000">
 									<div class="form-container">
 										<div class="row">
 											<div class="col-md-6 col-lg-6">
 												<div class="form-group">
-													<input type="text" name="name" class="form-control" placeholder="Your Name*" required="">
+													<input type="text" id="name" name="name" class="form-control" placeholder="Your Name*" required="">
 												</div>
 											</div>
 											<div class="col-md-6 col-lg-6">
 												<div class="form-group">
-													<input type="email" name="email" class="form-control" placeholder="Email Address*" required="">
+													<input type="email" id="email" name="email" class="form-control" placeholder="Email Address*" required="">
 												</div>
 											</div>
 											<div class="col-md-6 col-lg-6">
 												<div class="form-group">
-													<input type="text" name="phone" class="form-control" placeholder="Phone No">
+													<input type="text" id="number" name="phone" class="form-control" placeholder="Phone No">
 												</div>
 											</div>
 											<div class="col-md-6 col-lg-6">
 												<div class="form-group">
-													<input type="text" name="subject" class="form-control" placeholder="Subject">
+													<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
 												</div>
 											</div>
 											<div class="col-md-12 col-lg-12">
 												<div class="form-group">
-													<textarea name="message" class="form-control" placeholder="Message Here*" required=""></textarea>
+													<textarea name="message" id="notes" class="form-control" placeholder="Message Here*" required=""></textarea>
 												</div>
 											</div>
 											<div class="col-md-12 col-lg-12">
 												<div class="form-group">
-													<input class="button" type="submit" value="Send Mail" name="submit">
+													<input class="button" onclick="sendmail()" type="submit" value="Send Mail" name="submit">
 												</div>
 											</div>
 										</div>
 									</div>
-								</form>
+							
 							</div>
                         </div>
                     </div>
@@ -165,6 +173,33 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			function sendmail(){
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	var name = document.getElementById("name").value;
+	var mail=document.getElementById("email").value;
+	var subject=document.getElementById("subject").value;
+	var phone=document.getElementById("number").value;
+	var message=document.getElementById("notes").value;
+	console.log(message)
+	if(mail!="" && phone!="" && subject!=""&& name!="" && message!=""){
+	if(mail.match(mailformat)){
+
+	emailjs.send("service_qylcufl", "template_h0anbh1", {
+	name: name,
+	mail: mail,
+	number: phone,
+	message: message,
+	sub:subject
+
+	
+	
+	})
+	
+  }
+}
+}
+		</script>
 
 		
 			
