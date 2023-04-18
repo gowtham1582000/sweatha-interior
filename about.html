@@ -20,11 +20,9 @@
 
         <!-- Lead Style -->
  <link href="css/style.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-		<script src="custom.js"></script>		
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.js"
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -36,6 +34,126 @@
 	  $("#footer").load("footer.html"); 
 	});
 	</script>
+	<style>
+	
+		/* Slider */
+		
+		.slick-slide {
+			margin: 0px 20px;
+		}
+		
+		.slick-slide img {
+			width: 100%;
+		}
+		
+		.slick-slider
+		{
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+					user-select: none;
+			-webkit-touch-callout: none;
+			-khtml-user-select: none;
+			-ms-touch-action: pan-y;
+				touch-action: pan-y;
+			-webkit-tap-highlight-color: transparent;
+		}
+		
+		.slick-list
+		{
+			position: relative;
+			display: block;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+		.slick-list:focus
+		{
+			outline: none;
+		}
+		.slick-list.dragging
+		{
+			cursor: pointer;
+			cursor: hand;
+		}
+		
+		.slick-slider .slick-track,
+		.slick-slider .slick-list
+		{
+			-webkit-transform: translate3d(0, 0, 0);
+			   -moz-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				 -o-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+		}
+		
+		.slick-track
+		{
+			position: relative;
+			top: 0;
+			left: 0;
+			display: block;
+		}
+		.slick-track:before,
+		.slick-track:after
+		{
+			display: table;
+			content: '';
+		}
+		.slick-track:after
+		{
+			clear: both;
+		}
+		.slick-loading .slick-track
+		{
+			visibility: hidden;
+		}
+		
+		.slick-slide
+		{
+			display: none;
+			float: left;
+			height: 100%;
+			min-height: 1px;
+		}
+		[dir='rtl'] .slick-slide
+		{
+			float: right;
+		}
+		.slick-slide img
+		{
+			display: block;
+		}
+		.slick-slide.slick-loading img
+		{
+			display: none;
+		}
+		.slick-slide.dragging img
+		{
+			pointer-events: none;
+		}
+		.slick-initialized .slick-slide
+		{
+			display: block;
+		}
+		.slick-loading .slick-slide
+		{
+			visibility: hidden;
+		}
+		.slick-vertical .slick-slide
+		{
+			display: block;
+			height: auto;
+			border: 1px solid transparent;
+		}
+		.slick-arrow.slick-hidden {
+			display: none;
+		}
+		
+		</style>
 </head>
 	
 <body class="dark-theme">
@@ -156,166 +274,7 @@
 				</div>
 			</div><br><br><br>
 			
-			<div class="team pd_btom_110">
-				<div class="container">
-					<div class="section_header text-center">
-						<div class="shadow_icon"><img src="images/shadow_icon5.png" alt=""></div>
-						<h6 class="section_sub_title">OUR TEAM MEMBERS</h6>
-						<h1 class="section_title">Meet Our Amazing Team</h1>
-						<p class="section_desc">Swethas Interior Decors is the best constructioncompany. It has best team who are provideing best service possible.</p>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="owl_team owl-carousel owl-theme">
-								<div class="item">
-									<div class="team_construction">
-										<figure class="team_construction_inner">
-											<a href="team.html">
-												<img src="images/team/6.png" alt="Oscar Holland" loading="lazy" > 
-											</a>
-											<div class="team-box__info">
-												<a href="/team" class="name h5">Oscar Holland</a>
-												<p class="position">CEO</p>										
-											</div>
-										</figure>
-										<div class="team_hover_content">
-											<ul class="speakers-social-lists-simple">
-												<li>
-												<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
-												</li>
-												<li>
-												<a href="https://twitter.com/" class="fa fa-twitter"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-											</ul>
-											<h2 class="speaker-title-simple">
-											<a href="team.html">Oscar Holland</a>
-											</h2>
-											<p>CEO</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="team_construction">
-										<figure class="team_construction_inner">
-											<a href="team.html">
-												<img src="images/team/7.png" alt="Oscar Holland" loading="lazy" > 
-											</a>
-											<div class="team-box__info">
-												<a href="/team" class="name h5">Christpher Neel</a>
-												<p class="position">Constructor</p>										
-											</div>
-										</figure>
-										<div class="team_hover_content">
-											<ul class="speakers-social-lists-simple">
-												<li>
-												<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
-												</li>
-												<li>
-												<a href="https://twitter.com/" class="fa fa-twitter"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-											</ul>
-											<h2 class="speaker-title-simple">
-											<a href="team.html">Christpher Neel</a>
-											</h2>
-											<p>Constructor</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="team_construction">
-										<figure class="team_construction_inner">
-											<a href="team.html">
-												<img src="images/team/8.png" alt="Kiara Nordstorm" loading="lazy" > 
-											</a>
-											<div class="team-box__info">
-												<a href="/team" class="name h5">Kiara Nordstorm</a>
-												<p class="position">Constructor</p>										
-											</div>
-										</figure>
-										<div class="team_hover_content">
-											<ul class="speakers-social-lists-simple">
-												<li>
-												<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
-												</li>
-												<li>
-												<a href="https://twitter.com/" class="fa fa-twitter"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-											</ul>
-											<h2 class="speaker-title-simple">
-											<a href="team.html">Kiara Nordstorm</a>
-											</h2>
-											<p>Constructor</p>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="team_construction">
-										<figure class="team_construction_inner">
-											<a href="team.html">
-												<img src="images/team/8.png" alt="Oscar Holland" loading="lazy" > 
-											</a>
-											<div class="team-box__info">
-												<a href="/team" class="name h5">Oscar Holland</a>
-												<p class="position">CEO</p>										
-											</div>
-										</figure>
-										<div class="team_hover_content">
-											<ul class="speakers-social-lists-simple">
-												<li>
-												<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
-												</li>
-												<li>
-												<a href="https://twitter.com/" class="fa fa-twitter"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-												<li>
-												<a href="https://linkedin.com/" class="fa fa-linkedin"></a>
-												</li>
-											</ul>
-											<h2 class="speaker-title-simple">
-											<a href="team.html">Oscar Holland</a>
-											</h2>
-											<p>CEO</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>				
+
 			
 			<div class="banner type_3">
 				<div class="container">
@@ -337,213 +296,47 @@
 					</div>
 				</div>
 			</div>
-			<br><br><br>
-			<div class="testimonial pd_btom_110">
-				<div class="container">
-					<div class="section_header text-center">
-						<div class="shadow_icon"><img src="images/shadow_icon3.png" alt=""></div>
-						<h6 class="section_sub_title">Clients testimonial</h6>
-						<h1 class="section_title">What our clients say about us</h1>
-						<p class="section_desc">Swethas Interior Decors is the best construction company. It has best team who are provideing best service possible.</p>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="owl_testimonial1 owl-carousel owl-theme">
-								<div class="item">						
-									<div class="testibox1">
-										<div class="testibox_inner">
-											<div class="testi-content">
-												<ul>
-													<li class="text">Rating:</li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-												<p>“Swethas Interior Decors provides us amazing serives. The have designed and build our Miami grand Hotel project. They have exceeded our expectation and did such an amazing job. We are very happy with their work”</p>
-											</div>
-											<div class="testi-top">
-												<div class="testi-img">
-													<img src="images/reviewer1.png" alt="">
-												</div>
-												<div class="testi-info">
-													<h4>Johnathon Doe</h4>
-													<h6>MIAMI</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">						
-									<div class="testibox1">
-										<div class="testibox_inner">
-											<div class="testi-content">
-												<ul>
-													<li class="text">Rating:</li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-												<p>“Swethas Interior Decors provides us nice serives. The have designed and build our NY Pent House project. They have exceeded our expectation and did such an amazing job. We are very happy with their work”</p>
-											</div>
-											<div class="testi-top">
-												<div class="testi-img">
-													<img src="images/reviewer4.png" alt="">
-												</div>
-												<div class="testi-info">
-													<h4>Marina Samuel</h4>
-													<h6>New York</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">						
-									<div class="testibox1">
-										<div class="testibox_inner">
-											<div class="testi-content">
-												<ul>
-													<li class="text">Rating:</li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-												<p>“Swethas Interior Decors Construction provides us nice serives. The have designed and build our Utah Shopping Mall project. They have exceeded our expectation and did such an amazing job. We are very happy with their work”</p>
-											</div>
-											<div class="testi-top">
-												<div class="testi-img">
-													<img src="images/reviewer3.png" alt="">
-												</div>
-												<div class="testi-info">
-													<h4>Oakland Gardner</h4>
-													<h6>UTAH</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">						
-									<div class="testibox1">
-										<div class="testibox_inner">
-											<div class="testi-content">
-												<ul>
-													<li class="text">Rating:</li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-												<p>Swethas Interior Decors provides us nice serives. The have designed and build our NY Pent House project. They have exceeded our expectation and did such an amazing job. We are very happy with their work”</p>
-											</div>
-											<div class="testi-top">
-												<div class="testi-img">
-													<img src="images/reviewer1.png" alt="">
-												</div>
-												<div class="testi-info">
-													<h4>Johnathon Doe</h4>
-													<h6>New York</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">						
-									<div class="testibox1">
-										<div class="testibox_inner">
-											<div class="testi-content">
-												<ul>
-													<li class="text">Rating:</li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-												<p>Swethas Interior Decors provides us nice serives. The have designed and build our NY Pent House project. They have exceeded our expectation and did such an amazing job. We are very happy with their work”</p>
-											</div>
-											<div class="testi-top">
-												<div class="testi-img">
-													<img src="images/reviewer1.png" alt="">
-												</div>
-												<div class="testi-info">
-													<h4>Johnathon Doe</h4>
-													<h6>New York</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<br><br><br>			<br><br><br>
 
-			
-			<div class="brand-carousel section-padding owl-carousel">
-				<div class="single-logo">
-				  <img src="images/patner/new_patner/logo2.png" alt="">
-				</div>
-			  <div class="single-logo">
-				  <img src="images/patner/new_patner/logo3.png" alt="">
-				</div>
-			  <div class="single-logo">
-				  <img src="images/patner/new_patner/logo4.png" alt="">
-				</div>
-			  <div class="single-logo">
-				  <img src="images/patner/new_patner/logo5.png" alt="">
-				</div>
-			  <div class="single-logo">
-				  <img src="images/patner/new_patner/logo6.png" alt="">
-				</div>
-				<div class="single-logo">
-					<img src="images/patner/new_patner/logo7.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo8.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo9.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo11.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo10.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo12.png" alt="">
-				  </div>
-				  <div class="single-logo">
-					<img src="images/patner/new_patner/logo13.png" alt="">
-				  </div>
-			  <div class="single-logo">
-				  <img src="images/patner/new_patner/logo1.png" alt="">
-				</div>
-			  </div>
+			<section class="customer-logos slider" style="background-color: white;">
+				<div class="slide"><img src="images/patner/new_patner/logo1.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo2.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo3.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo4.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo5.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo6.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo7.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo8.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo9.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo10.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo13.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo11.png"></div>
+				<div class="slide"><img src="images/patner/new_patner/logo12.png"></div>
+
+			 </section>
 			  <script>
-			  $('.brand-carousel').owlCarousel({
-				loop:true,
-				margin:10,
-				autoplay:true,
-				responsive:{
-				  0:{
-					items:4
-				  },
-				  600:{
-					items:3
-				  },
-				  1000:{
-					items:11
-				  }
-				}
-			  }) 
+			  $(document).ready(function(){
+					$('.customer-logos').slick({
+						slidesToShow: 10,
+						slidesToScroll: 1,
+						autoplay: true,
+						autoplaySpeed: 1500,
+						arrows: false,
+						dots: false,
+						pauseOnHover: false,
+						responsive: [{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 4
+							}
+						}, {
+							breakpoint: 520,
+							settings: {
+								slidesToShow: 3
+							}
+						}]
+					});
+				});
 			  </script>
 
 		
@@ -565,7 +358,8 @@
 	<!-- Isotope -->
 	<script src="plugins/isotope/isotope.pkgd.min.js"></script>
 	<script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 	<script src="plugins/aos/aos.js"></script>
 	<script src="js/funfacts.js"></script>
 	<script src="js/custom.js"></script>
